@@ -1,15 +1,47 @@
-<!DOCTYPE html>
+ï»¿<!DOCTYPE html>
+
 <html>
 <head>
-    <title>´ëÇöÀÌÀÇ ÀÏÁ¤</title>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <title>HTML ë ˆì´ì•„ì›ƒ(layout)</title>
+    <style>
+        body {
+            width: 440px;
+        }
+
+        #header, #nav, #section, #article, #footer {
+            display: block;
+            width: 400px;
+            margin: 4px;
+            padding: 4px;
+            background-color: #ddd;
+            text-align: center;
+        }
+
+        #section {
+            float: left;
+            width: 400px;
+            height: 60px;
+        }
+
+        #article {
+            width: 390px;
+            background-color: #efefef;
+        }
+
+        #footer {
+            overflow: hidden;
+        }
+    </style>
 </head>
 <body>
-    <h1><a href="index.html">HOMEPAGE</a></h1>
-    <ol>
-        <li><a href="1.html">ÇÒÀÏ</a></li>
-        <li><a href="2.html">³ª¶ó<a /></li>
-    </ol>
-
+    <h1>*í™ˆí˜ì´ì§€*</h1>
+    <div id="header">ë‚ ì”¨</div>
+    <div id="nav">Nav</div>
+    <div id="section">
+        Section
+        <div id="article">í˜„ì¬ì‹œê°„</div>
+    </div>
+    <div id="footer">Footer</div>
 </body>
 </html>

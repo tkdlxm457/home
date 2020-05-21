@@ -1,0 +1,39 @@
+<html>
+
+<head>
+
+<title>½Ã°£</title>
+
+<script type="text/javascript">
+
+    document.addEventListener("DOMContentLoaded", function() 
+	{
+        realTimer();
+        setInterval(realTimer, 100);
+
+    });
+
+    function realTimer() 
+	{
+
+		const nowDate = new Date();
+		const hour = nowDate.getHours();
+		const min = nowDate.getMinutes();
+		const sec = nowDate.getSeconds();
+		document.getElementById("nowTimes").innerHTML = 
+                 "&nbsp;" + hour + ":" + addzero(min) + ":" + addzero(sec);
+
+	}
+
+	function addzero(num)
+	{
+		if(num < 10) { num = "0" + num; }
+ 		return num;
+	}
+</script>
+</head>
+<body>
+    <h1><span id="nowTimes"></span></h1>
+</body>
+
+</html>
