@@ -1,0 +1,32 @@
+<html>
+
+<head>
+	<title>모멘텀</title>
+
+	<script src="./time.js"></script>
+
+	<script type="text/javascript">
+		// 주석 달아주세요.
+		document.addEventListener("DOMContentLoaded", function () {
+			realTimer();
+			setInterval(realTimer, 100);
+
+		});
+
+		// 주석 달아주세요.
+		function realTimer() {
+			const nowDate = new Date();
+			const hour = nowDate.getHours();
+			const min = nowDate.getMinutes();
+			const sec = nowDate.getSeconds();
+			document.getElementById("nowTimes").innerHTML =
+				"&nbsp;" + hour + ":" + addzero(min) + ":" + addzero(sec);
+		}
+	</script>
+</head>
+
+<body>
+	<h1><span id="nowTimes"></span></h1>
+</body>
+
+</html>
