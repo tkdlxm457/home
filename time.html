@@ -6,14 +6,16 @@
 	<script src="./time.js"></script>
 
 	<script type="text/javascript">
-		// 주석 달아주세요.
+		
 		document.addEventListener("DOMContentLoaded", function () {
+			// 시간을 딜레이 없이 나타내기위한 선 실행
 			realTimer();
+			// 0.1초에 한번씩 시간을 갱신
 			setInterval(realTimer, 100);
 
 		});
 
-		// 주석 달아주세요.
+		// 시간을 출력
 		function realTimer() {
 			const nowDate = new Date();
 			const hour = nowDate.getHours();
