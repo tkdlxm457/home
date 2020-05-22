@@ -6,12 +6,15 @@
     <title>HTML 레이아웃(layout)</title>
     <style>
         body {
-            width: 440px;
+            background-image: url('./sky.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
         }
 
         #header, #nav, #section, #article, #footer {
             display: block;
-            width: 400px;
+            width: 100%;
             margin: 4px;
             padding: 4px;
             background-color: #ddd;
@@ -20,12 +23,11 @@
 
         #section {
             float: left;
-            width: 400px;
-            height: 60px;
+            width: 100%;
         }
 
         #article {
-            width: 390px;
+            width: 100%;
             background-color: #efefef;
         }
 
@@ -40,7 +42,9 @@
     <div id="nav">Nav</div>
     <div id="section">
         Section
-        <div id="article">현재시간</div>
+        <div id="article">
+            <a href="time.html">time</a>
+        </div>
     </div>
     <div id="footer">Footer</div>
 </body>
