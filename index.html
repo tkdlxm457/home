@@ -31,12 +31,15 @@
   <script src="./time.js"></script>
   <script src="./todo.js"></script>
   <link rel="stylesheet" href="todo.css">
+  <link rel="stylesheet" href="video.css">
   <style>
     body {
       background-image: url('./sky.jpg');
       background-repeat: no-repeat;
       background-size: cover;
       width: 100%;
+
+      
     }
 
     #header,
@@ -73,6 +76,9 @@
 
 <body>
   <h1>*홈페이지*</h1>
+  <video id="videobcg" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+    <source src="video.mp4" type="video/mp4">
+</video>
   <div id="header">
     <div class="ctemp">현재온도: </div>
     <div class="clowtemp">최저온도: </div>
