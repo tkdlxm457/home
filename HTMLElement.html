@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="utf-8">
+</head>
+<body>
+<ul>
+    <li>html</li>
+    <li>css</li>
+    <li id="active">JavaScript</li>
+</ul>
+<script>
+    var  li = document.getElementById('active');
+    console.log(li.constructor.name); // HTMLLIElement >> 단수
+    var  lis = document.getElementsById('li');
+    console.log(lis.constructor.name); // HTMLCollection >> 복수
+</script>
+</body>
+</html>
