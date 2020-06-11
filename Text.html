@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="target1"><span>Hello world</span></p> <!--공백이 없기 때문에 p태그 firstChild는 span-->
+<p id="target2"> <!--공백이 있어 p태그 firstChild는 공백이 된다.-->
+    <span>Hello world</span>
+</p>
+<script>
+var t1 = document.getElementById('target1').firstChild;
+var t2 = document.getElementById('target2').firstChild;
+
+console.log(t1.firstChild.nodeValue);
+try
+{
+    console.log(t2.firstChild.nodeValue);
+}  catch(e)
+{
+    console.log(e);
+}
+console.log(t2.nextSibling.firstChild.nodeValue);
+</script>
+</body>
+</html>
