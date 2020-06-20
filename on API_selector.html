@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <ul>
+            <li><a href="#">html</a></li>
+            <li><a href="#">css</a></li>
+            <li><a href="#">JavaScript</a></li>
+        </ul>
+        <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script>
+            $('ul').on('click', 'a, li', function(event)
+            {
+                console.log(this.tagName);
+            })
+        </script>
+    </body>
+</html>
