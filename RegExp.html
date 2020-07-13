@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <body>
+    <script>
+        var pattern = /a/; // /a./으로 실행시 = ["ab"]
+        console.log (pattern.exec('abcdef')); // ["a"]
+        console.log (pattern.exec('bcdefg')); // null
+        console.log (pattern.test('abcdef')); // true
+        console.log (pattern.test('bcdefg')); // false
+    </script>
+    </script>
+    </body>
+</html>
