@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+        // 함수 안에서 또 다른 함수를 선언할 수 있다. 내부함수
+        function outter() 
+        {
+            function inner() 
+            {
+                var title = 'kim dae hyun';
+                alert(title);
+            }
+            inner();
+        }
+        outter();
+
+        //내부함수는 외부함수의 지역변수에 접급할 수 있다.
+        function outter() 
+        {
+            var title = 'kim dae hyun';
+            function inner()
+            {
+                alert(title);
+            }
+            inner();
+        }
+        outter();
+    </script>
+</body>
+</html>
