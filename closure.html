@@ -14,7 +14,7 @@
         }
         outter();
 
-        //내부함수는 외부함수의 지역변수에 접급할 수 있다.
+        // 내부함수는 외부함수의 지역변수에 접급할 수 있다.
         function outter() 
         {
             var title = 'kim dae hyun';
@@ -25,6 +25,20 @@
             inner();
         }
         outter();
+
+        /*내부함수는 외부함수의 지역변수에 접근 할 수 있는데, 
+        외부함수의 실행이 끝나서 외부함수가 소멸된 이후에도 내부함수가 외부함수의 변수에 접근 할 수 있다. 
+        이러한 매커니즘을 클로저라고 한다.*/
+        function outter()
+        {
+            var title = 'kim dae hyun';
+            return function()
+            {
+                alert(title);
+            }
+        }
+        inner = outter();
+        inner();
     </script>
 </body>
 </html>
