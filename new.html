@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+        var person = {}
+        person.name = 'kim';
+        person.introduce = function(){
+            return 'My name is '+this.name;
+        }
+        document.write(person.introduce());
+
+        // 위 예제는 객체를 만드는 과정에 분산되어 있다. 객체를 정의 할 때 값을 셋팅하도록 코드를 바꿔보자.
+        var person = {
+            'name' : 'kim',
+            'introduce' : function(){
+                return 'My name is '+this.name;
+            }
+        }
+        document.write(person.introduce());
+        // 만약 다른 사람의 이름을 담을 객체가 필요하다면 객체의 정의를 반복해야 할 것이다. 객체의 구조를 재활용할 수 있는 방법이 필요하다. 이 때 사용하는 것이 생성자다.
+    </script>
+</body>
+</html>
