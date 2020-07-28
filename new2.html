@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+        // 객체에 대한 초기화
+        function Person(name) {
+            this.introduce = function() {
+                return 'My name is'+this.name;
+            }
+        }
+
+        var p1 = new Person('하하하');
+        document.write(p1.introduce()+"<br />");
+
+        var p2 = new Person('호호호');
+        document.write(p2.introduce()+"<br />");
+        // 생성자 내에서 이 객체의 프로퍼티를 정의하고 있다. 이러한 작업을 초기화라고 한다. 이를 통해서 코드의 재사용성이 높아졌다.!
+    </script>
+</body>
+</html>
