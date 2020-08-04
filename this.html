@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <body>
+    <script>
+        // 함수를 호출했을 때 this는 전역객체인 window와 같다.
+        function func(){
+            if(window === this){
+                document.write("window === this");
+            }
+        }
+        func(); 
+    </script>
+    </body>
+</html>
